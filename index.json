@@ -1,6 +1,7 @@
 {
     "show databases": "Apresenta as bases de dados",
     "use {nomeBanco}": "Cria um novo banco",
-    "Info": "Os bancos serão apresentados somente se o database tiver uma collection",
-    "criarCollection": "db.createCollection({nameColection})"
+    "criarCollection": "db.createCollection('nameColection')",
+    "remove uma collection": "db.nameColection.drop()",
+    "remover banco(vc deve estar conectado no banco)": "db.dropDatabase()"
 }
