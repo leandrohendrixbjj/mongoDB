@@ -19,5 +19,11 @@
 // Menor  e igual 5
 "lte:" {"Temporadas disponíveis": {$lte:5}}
 
+// Diferente de 2020
+{"Ano de lançamento": {$ne: 2020}}
+
+//Dados que estão dentro de um array
+{"Genero":{$all:["Ação", "Comédia"]}}
+
 
 
