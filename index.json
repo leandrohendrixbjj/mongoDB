@@ -3,40 +3,6 @@
         "show databases": "Apresenta as bases de dados",
         "use {nomeBanco}": "Cria um novo banco",
         "criarCollection": "db.createCollection('nameColection')",
-        "remove uma collection": "db.nameColection.drop()",
-        "remover banco(vc deve estar conectado no banco)": ""
-    },
-    {
-        "db.series.insertOne:"({
-            "Série": "Fleabag",
-            "Ano de lançamento": 2016,
-            "Temporadas disponíveis": 2,
-            "Linguagem": "Inglês",
-            "IMDb Avaliação": 8.7
-        })
-    },
-    {
-        "db.series.insertMany"([
-            {
-                "Série": "Made in Heaven",
-                "Temporadas disponíveis": 1,
-                "Linguagem": "Hindi",
-                "Genero": [
-                    "Drama"
-                ],
-                "IMDb Avaliação": 8.3,
-                "Classificação": "18+"
-            },
-            {
-                "Série": "Homecoming",
-                "Temporadas disponíveis": 2,
-                "Linguagem": "Inglês",
-                "Genero": [
-                    "Drama"
-                ],
-                "IMDb Avaliação": 7.5,
-                "Classificação": "16+"
-            }
-        ])
+        "remove uma collection": "db.nameColection.drop()"
     }
 ]
