@@ -1,0 +1,17 @@
+
+// Consulta
+db.series.find({"Série": "Grimm"})
+
+
+// Update One
+db.series.updateOne({"Série": "Grimm"},{$set: {"Temporadas disponíveis": 6}})`
+
+// Update One => Cria o campo Classificação caso não exista no registro
+// que deve ser atualizado
+db.series.updateOne({"Série":"Grimm"}, {$set: {"Classificação":"16+"}});
+
+// updateMany => Cria o campo Ano de lançamento no objeto. Esse campo não existia
+db.series.updateMany({"Série":{$in:["House of the Dragon", "House of the Dragon 2"]}},{$set: {"Ano de lançamento": "2020"}})
+
+
+
