@@ -1,0 +1,10 @@
+
+//Remove um
+db.series.deleteOne({Série:"Pataal Lok"});
+
+//Remove vários
+db.series.deleteMany({"Temporadas disponíveis": 1})
+
+//Remove Todos
+db.series.deleteMany()
+
