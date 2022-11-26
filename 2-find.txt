@@ -15,11 +15,21 @@ db.series.find({"Ano de lançamento": {$in: [2019,2020]}})
 => Apresenta os 5 primeiros
 db.series.find().limit(5)
 
-db.series.find().sort({"Série":1})
 =>Ordena pela descrição da série
+db.series.find().sort({"Série":1})
 
-db.series.find({"Ano de lançamento": {$ne: 2020}})
 => Diferente de 2020
+db.series.find({"Ano de lançamento": {$ne: 2020}})
 
-db.series.find({"Genero": {$all:["Ação", "Comédia"]}})
 =>Dados que estão dentro de um array
+db.series.find({"Genero": {$all:["Ação", "Comédia"]}})
+
+=>Faz a busca ignorando o case sensitive
+db.series.find({nome:/leandro/i})
+
+=>Faz a atualização de um registro, caso um parâmetro não exista ele será substituido
+db.series.replaceOne({nome:"Got"}, {nome:"Got 3", "Ano":2020})
+
+=>Faz a contagem de documentos
+db.series.countDocuments()
+
