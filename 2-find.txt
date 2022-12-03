@@ -33,3 +33,9 @@ db.series.replaceOne({nome:"Got"}, {nome:"Got 3", "Ano":2020})
 =>Faz a contagem de documentos
 db.series.countDocuments()
 
+=>Buscar tudo que possui letra a ou u
+db.series.find({nome:{$regex: /au/}});
+
+=>Ignora o parametro passado, nesse caso os dois primeiros
+db.series.find().skip(2)
+
