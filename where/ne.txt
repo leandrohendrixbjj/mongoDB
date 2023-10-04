@@ -1,0 +1,2 @@
+=> Diferente de 2020
+db.series.find({"Ano de lançamento": {$ne: 2020}})

@@ -1,11 +1,3 @@
-db.series.insertOne:"({
-    "Série": "Fleabag",
-    "Ano de lançamento": 2016,
-    "Temporadas disponíveis": 2,
-    "Linguagem": "Inglês",
-    "IMDb Avaliação": 8.7
-})
-
 db.series.insertMany"([
     {
         "Série": "Made in Heaven",

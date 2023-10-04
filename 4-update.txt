@@ -1,8 +1,4 @@
 
-// Consulta
-db.series.find({"Série": "Grimm"})
-
-
 // Update One
 db.series.updateOne({"Série": "Grimm"},{$set: {"Temporadas disponíveis": 6}})`
 

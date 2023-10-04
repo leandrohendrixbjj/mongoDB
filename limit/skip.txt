@@ -1,0 +1,2 @@
+=>Ignora os dois primeiros registros
+db.series.find().skip(2)

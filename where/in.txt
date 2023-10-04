@@ -1,0 +1,2 @@
+=>Dados que estão dentro de um array    
+{"Ano de lançamento":{$in:[2018,2019]}}

@@ -1,13 +1,9 @@
 // Via IDE
 
-"or": {$or: [{"Ano de lançamento":2018},  {"Classificação":"18+"}] },
-
 "and": {$and: [{"Ano de lançamento":2018},  {"Classificação":"18+"}] },
 
 // Negação do or
 "nor": {$nor: [{"Ano de lançamento":2018},  {"Classificação":"18+"}] },
-
-"in": {"Ano de lançamento": {$in: [2019,2018]}}
 
 // Maior que 2
 "gt": {"Temporadas disponíveis": {$gt:2}}
@@ -20,12 +16,6 @@
 
 // Menor  e igual 5
 "lte:" {"Temporadas disponíveis": {$lte:5}}
-
-// Diferente de 2020
-{"Ano de lançamento": {$ne: 2020}}
-
-//Dados que estão dentro de um array
-{"Genero":{$all:["Ação", "Comédia"]}}
 
 
 

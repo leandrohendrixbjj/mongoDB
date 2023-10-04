@@ -1,0 +1,2 @@
+=>Faz a contagem de documentos
+db.series.countDocuments()

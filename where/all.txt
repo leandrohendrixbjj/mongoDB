@@ -1,0 +1,2 @@
+=>Dados que estão dentro de um array
+db.series.find({"Genero": {$all:["Ação", "Comédia"]}})

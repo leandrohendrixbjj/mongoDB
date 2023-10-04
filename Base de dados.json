@@ -1,699 +1,1045 @@
-[  {
-		"Série": "Mirzapur",
+[
+	{
+		"Serie": "Mirzapur",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.5,
 		"Classificação": "18+"
-	},{
-		"Série": "The Family Man",
+	},
+	{
+		"Serie": "The Family Man",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama, Ação"],
+		"Genero": [
+			"Drama, Ação"
+		],
 		"IMDb Avaliação": 8.6,
 		"Classificação": "18+"
-	},{
-		"Série": "Modern Love",
+	},
+	{
+		"Serie": "Modern Love",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Romance", "Comédia"],
+		"Genero": [
+			"Drama",
+			"Romance",
+			"Comédia"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "16+"
-	},{	
-		"Série": "Comicstaan",
+	},
+	{
+		"Serie": "Comicstaan",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Hindi",
-		"Genero": ["Artes", "Entretenimento", "Cultura"],
+		"Genero": [
+			"Artes",
+			"Entretenimento",
+			"Cultura"
+		],
 		"Classificação": "18+"
-	},{		
-		"Série": "Inside Edge",
+	},
+	{
+		"Serie": "Inside Edge",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Hindi",
-		"Genero": ["Esportes", "Drama"],
+		"Genero": [
+			"Esportes",
+			"Drama"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "18+"
-	},{		
-		"Série": "The Boys",
+	},
+	{
+		"Serie": "The Boys",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Ação", "Comédia"],
+		"Genero": [
+			"Ação",
+			"Comédia"
+		],
 		"IMDb Avaliação": 8.7,
 		"Classificação": "18+"
-	},{
-		"Série": "Hanna",
+	},
+	{
+		"Serie": "Hanna",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"IMDb Avaliação": 7.5,
 		"Classificação": "16+"
-	},{
-		"Série": "Hunters",
+	},
+	{
+		"Serie": "Hunters",
 		"Ano de lançamento": 2020,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Ação",
+			"Suspense"
+		],
 		"IMDb Avaliação": 7.2,
 		"Classificação": "18+"
-	},{		
-		"Série": "Good Omens",
+	},
+	{
+		"Serie": "Good Omens",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Fantasia", "Comédia"],
+		"Genero": [
+			"Fantasia",
+			"Comédia"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Breathe",
+	},
+	{
+		"Serie": "Breathe",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 8.4,
 		"Classificação": "16+"
-	},{
-		"Série": "The Forgotten Army- Azaadi ke Liye",
+	},
+	{
+		"Serie": "The Forgotten Army- Azaadi ke Liye",
 		"Ano de lançamento": 2020,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "18+"
-	},{
-		"Série": "Tom Clancy's Jack Ryan",
+	},
+	{
+		"Serie": "Tom Clancy's Jack Ryan",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Ação",
+			"Suspense"
+		],
 		"IMDb Avaliação": 8.1,
 		"Classificação": "16+"
-	},{
-		"Série": "Tales from the Loop",
+	},
+	{
+		"Serie": "Tales from the Loop",
 		"Ano de lançamento": 2020,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Ficção científica"],
+		"Genero": [
+			"Ficção científica"
+		],
 		"IMDb Avaliação": 7.5,
 		"Classificação": "18+"
-	},{
-		"Série": "The Test: A New Era for Australia's Team",
+	},
+	{
+		"Serie": "The Test: A New Era for Australia's Team",
 		"Ano de lançamento": 2020,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Documentário"],
+		"Genero": [
+			"Documentário"
+		],
 		"IMDb Avaliação": 9,
 		"Classificação": "16+"
-	},{
-		"Série": "The Man in the High Castle",
+	},
+	{
+		"Serie": "The Man in the High Castle",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "18+"
-	},{
-		"Série": "One Mic Stand",
+	},
+	{
+		"Serie": "One Mic Stand",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Comédia"],
+		"Genero": [
+			"Comédia"
+		],
 		"IMDb Avaliação": 6.5,
 		"Classificação": "16+"
-	},{
-		"Série": "Undone",
+	},
+	{
+		"Serie": "Undone",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Animação", "Drama"],
+		"Genero": [
+			"Animação",
+			"Drama"
+		],
 		"IMDb Avaliação": 8.2,
 		"Classificação": "16+"
-	},{
-		"Série": "American Gods",
+	},
+	{
+		"Serie": "American Gods",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Ficção científica", "Drama", "Suspense"],
+		"Genero": [
+			"Ficção científica",
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 7.8,
 		"Classificação": "18+"
-	},{
-		"Série": "The Tick",
+	},
+	{
+		"Serie": "The Tick",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Comédia", "Ação"],
+		"Genero": [
+			"Comédia",
+			"Ação"
+		],
 		"IMDb Avaliação": 7.4,
 		"Classificação": "16+"
-	},{
-		"Série": "Jestination Unknown",
+	},
+	{
+		"Serie": "Jestination Unknown",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Comédia", "Artes", "Entretenimento", "Cultura"],
+		"Genero": [
+			"Comédia",
+			"Artes",
+			"Entretenimento",
+			"Cultura"
+		],
 		"IMDb Avaliação": 6.2,
 		"Classificação": "16+"
-	},{
-		"Série": "Man with a Plan",
+	},
+	{
+		"Serie": "Man with a Plan",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "All"
-	},{
-		"Série": "Suits"
-	},{
-		"Série": "Doctor Who",
+	},
+	{
+		"Serie": "Suits"
+	},
+	{
+		"Serie": "Doctor Who",
 		"Ano de lançamento": 2005,
 		"Temporadas disponíveis": 13,
 		"Linguagem": "Inglês",
-		"Genero": ["Ficção científica"],
+		"Genero": [
+			"Ficção científica"
+		],
 		"Classificação": "All"
-	},{
-		"Série": "Grey's Anatomy",
+	},
+	{
+		"Serie": "Grey's Anatomy",
 		"Ano de lançamento": 2005,
 		"Temporadas disponíveis": 15,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 7.6,
 		"Classificação": "16+"
-	},{
-		"Série": "The Mentalist",
+	},
+	{
+		"Serie": "The Mentalist",
 		"Ano de lançamento": 2009,
 		"Temporadas disponíveis": 7,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.1,
 		"Classificação": "16+"
-	},{
-		"Série": "Afsos",
+	},
+	{
+		"Serie": "Afsos",
 		"Ano de lançamento": 2020,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama", "Comédia"],
+		"Genero": [
+			"Drama",
+			"Comédia"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Laakhon Mein Ek",
+	},
+	{
+		"Serie": "Laakhon Mein Ek",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "House",
+	},
+	{
+		"Serie": "House",
 		"Ano de lançamento": 2005,
 		"Temporadas disponíveis": 8,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "The Good Doctor",
+	},
+	{
+		"Serie": "The Good Doctor",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "The Vampire Diaries",
+	},
+	{
+		"Serie": "The Vampire Diaries",
 		"Ano de lançamento": 2010,
 		"Temporadas disponíveis": 8,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Horror", "Romance", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Horror",
+			"Romance",
+			"Suspense"
+		],
 		"IMDb Avaliação": 7.7,
 		"Classificação": "16+"
-	},{
-		"Série": "Hostel Daze",
+	},
+	{
+		"Serie": "Hostel Daze",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama", "Comédia"],
+		"Genero": [
+			"Drama",
+			"Comédia"
+		],
 		"IMDb Avaliação": 8.7,
 		"Classificação": "16+"
-	},{
-		"Série": "Mr. Robot",
+	},
+	{
+		"Serie": "Mr. Robot",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 8.5,
 		"Classificação": "18+"
-	},{
-		"Série": "Supernatural",
+	},
+	{
+		"Serie": "Supernatural",
 		"Ano de lançamento": 2006,
 		"Temporadas disponíveis": 15,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense", "Horror"],
+		"Genero": [
+			"Drama",
+			"Suspense",
+			"Horror"
+		],
 		"IMDb Avaliação": 8.4,
 		"Classificação": "16+"
-	},{
-		"Série": "Dexter",
+	},
+	{
+		"Serie": "Dexter",
 		"Ano de lançamento": 2006,
 		"Temporadas disponíveis": 8,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.6,
 		"Classificação": "18+"
-	},{
-		"Série": "The Magicians",
+	},
+	{
+		"Serie": "The Magicians",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense", "Fantasia"],
+		"Genero": [
+			"Drama",
+			"Suspense",
+			"Fantasia"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Blindspot",
+	},
+	{
+		"Serie": "Blindspot",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 7.4,
 		"Classificação": "16+"
-	},{
-		"Série": "The Good Wife",
+	},
+	{
+		"Serie": "The Good Wife",
 		"Ano de lançamento": 2010,
 		"Temporadas disponíveis": 7,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.3,
 		"Classificação": "16+"
-	},{
-		"Série": "The Girlfriend Experience",
+	},
+	{
+		"Serie": "The Girlfriend Experience",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 7.1,
 		"Classificação": "18+"
-	},{
-		"Série": "Chacha Vidhayak Hain Humare",
+	},
+	{
+		"Serie": "Chacha Vidhayak Hain Humare",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama", "Comédia"],
+		"Genero": [
+			"Drama",
+			"Comédia"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Scorpion",
+	},
+	{
+		"Serie": "Scorpion",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "Shameless",
+	},
+	{
+		"Serie": "Shameless",
 		"Ano de lançamento": 2011,
 		"Temporadas disponíveis": 10,
 		"Linguagem": "Inglês",
-		"Genero": ["Comédia", "Drama"],
+		"Genero": [
+			"Comédia",
+			"Drama"
+		],
 		"IMDb Avaliação": 8.6,
 		"Classificação": "18+"
-	},{
-		"Série": "Reign",
+	},
+	{
+		"Serie": "Reign",
 		"Ano de lançamento": 2014,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Downtown Abbey",
+	},
+	{
+		"Serie": "Downtown Abbey",
 		"Ano de lançamento": 2010,
 		"Temporadas disponíveis": 6,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.7,
 		"Classificação": "7+"
-	},{
-		"Série": "McMafia",
+	},
+	{
+		"Serie": "McMafia",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "This is Us",
+	},
+	{
+		"Serie": "This is Us",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.7,
 		"Classificação": "16+"
-	},{
-		"Série": "Malgudi Days Swami & Friends 1",
+	},
+	{
+		"Serie": "Malgudi Days Swami & Friends 1",
 		"Ano de lançamento": 1987,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "7+"
-	},{
-		"Série": "Nikita",
+	},
+	{
+		"Serie": "Nikita",
 		"Ano de lançamento": 2011,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"Classificação": "18+"
-	},{
-		"Série": "Carnival Row",
+	},
+	{
+		"Serie": "Carnival Row",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Fantasia"],
+		"Genero": [
+			"Drama",
+			"Fantasia"
+		],
 		"IMDb Avaliação": 7.9,
 		"Classificação": "16+"
-	},{
-		"Série": "Legacies",
+	},
+	{
+		"Serie": "Legacies",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Bates Motel",
+	},
+	{
+		"Serie": "Bates Motel",
 		"Ano de lançamento": 2013,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama","Horror", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Horror",
+			"Suspense"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "The Exorcist",
+	},
+	{
+		"Serie": "The Exorcist",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.1,
 		"Classificação": "16+"
-	},{
-		"Série": "The Night Manager",
+	},
+	{
+		"Serie": "The Night Manager",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 8.1,
 		"Classificação": "18+"
-	},{
-		"Série": "The Originals",
+	},
+	{
+		"Serie": "The Originals",
 		"Ano de lançamento": 2014,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Horror", "Fantasia"],
+		"Genero": [
+			"Drama",
+			"Horror",
+			"Fantasia"
+		],
 		"IMDb Avaliação": 8.2,
 		"Classificação": "16+"
-	},{
-		"Série": "The Purge",
+	},
+	{
+		"Serie": "The Purge",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Horror", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Horror",
+			"Suspense"
+		],
 		"Classificação": "18+"
-	},{
-		"Série": "Deception",
+	},
+	{
+		"Serie": "Deception",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "The Last Ship",
+	},
+	{
+		"Serie": "The Last Ship",
 		"Ano de lançamento": 2014,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense", "Ação"],
+		"Genero": [
+			"Drama",
+			"Suspense",
+			"Ação"
+		],
 		"IMDb Avaliação": 7.5,
 		"Classificação": "16+"
-	},{
-		"Série": "Treadstone",
+	},
+	{
+		"Serie": "Treadstone",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 7,
 		"Classificação": "16+"
-	},{
-		"Série": "The Terror",
+	},
+	{
+		"Serie": "The Terror",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense", "Aventura"],
+		"Genero": [
+			"Drama",
+			"Suspense",
+			"Aventura"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Manifest",
+	},
+	{
+		"Serie": "Manifest",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Pushpavalli",
+	},
+	{
+		"Serie": "Pushpavalli",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama", "Comédia"],
+		"Genero": [
+			"Drama",
+			"Comédia"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Fringe",
+	},
+	{
+		"Serie": "Fringe",
 		"Ano de lançamento": 2009,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Ficção científica"],
+		"Genero": [
+			"Ficção científica"
+		],
 		"IMDb Avaliação": 8.4,
 		"Classificação": "16+"
-	},{
-		"Série": "Person of Interest",
+	},
+	{
+		"Serie": "Person of Interest",
 		"Ano de lançamento": 2012,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Ação",
+			"Suspense"
+		],
 		"IMDb Avaliação": 8.4,
 		"Classificação": "16+"
-	},{
-		"Série": "The Affair",
+	},
+	{
+		"Serie": "The Affair",
 		"Ano de lançamento": 2014,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "18+"
-	},{
-		"Série": "The American Playboy: The Hugh Hefner Story",
+	},
+	{
+		"Serie": "The American Playboy: The Hugh Hefner Story",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Documentário"],
+		"Genero": [
+			"Drama",
+			"Documentário"
+		],
 		"Classificação": "18+"
-	},{
-		"Série": "The Widow",
+	},
+	{
+		"Serie": "The Widow",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 6.9,
 		"Classificação": "16+"
-	},{
-		"Série": "God Friended Me",
+	},
+	{
+		"Serie": "God Friended Me",
 		"Ano de lançamento": 2019,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Comédia"],
+		"Genero": [
+			"Drama",
+			"Comédia"
+		],
 		"Classificação": "All"
-	},{
-		"Série": "Star Trek: Picard",
+	},
+	{
+		"Serie": "Star Trek: Picard",
 		"Ano de lançamento": 2020,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Ficção científica"],
+		"Genero": [
+			"Ficção científica"
+		],
 		"IMDb Avaliação": 7.6,
 		"Classificação": "18+"
-	},{
-		"Série": "Fear the Walking Dead",
+	},
+	{
+		"Serie": "Fear the Walking Dead",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Horror"],
+		"Genero": [
+			"Drama",
+			"Horror"
+		],
 		"IMDb Avaliação": 6.9,
 		"Classificação": "16+"
-	},{
-		"Série": "Taken",
+	},
+	{
+		"Serie": "Taken",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Bosch",
+	},
+	{
+		"Serie": "Bosch",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 6,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.4,
 		"Classificação": "18+"
-	},{
-		"Série": "Elementary",
+	},
+	{
+		"Serie": "Elementary",
 		"Ano de lançamento": 2013,
 		"Temporadas disponíveis": 7,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 7.9,
 		"Classificação": "16+"
-	},{
-		"Série": "Beauty and the Beast",
+	},
+	{
+		"Serie": "Beauty and the Beast",
 		"Ano de lançamento": 2013,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ficção científica"],
+		"Genero": [
+			"Drama",
+			"Ficção científica"
+		],
 		"IMDb Avaliação": 7.1,
 		"Classificação": "16+"
-	},{
-		"Série": "NCIS",
+	},
+	{
+		"Serie": "NCIS",
 		"Ano de lançamento": 2004,
 		"Temporadas disponíveis": 17,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"IMDb Avaliação": 7.8,
 		"Classificação": "16+"
-	},{
-		"Série": "Masters of Sex",
+	},
+	{
+		"Serie": "Masters of Sex",
 		"Ano de lançamento": 2013,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Fantasia"],
+		"Genero": [
+			"Fantasia"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Into the Badlands",
+	},
+	{
+		"Serie": "Into the Badlands",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação", "Ficção científica"],
+		"Genero": [
+			"Drama",
+			"Ação",
+			"Ficção científica"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "16+"
-	},{
-		"Série": "Vella Raja",
+	},
+	{
+		"Serie": "Vella Raja",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Ação"],
+		"Genero": [
+			"Ação"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Bang Baaja Baaraat",
+	},
+	{
+		"Serie": "Bang Baaja Baaraat",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Hindi",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "18+"
-	},{
-		"Série": "Covert Affairs",
+	},
+	{
+		"Serie": "Covert Affairs",
 		"Ano de lançamento": 2010,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "The Handmaid's Tale",
+	},
+	{
+		"Serie": "The Handmaid's Tale",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.5,
 		"Classificação": "18+"
-	},{
-		"Série": "Gangstars",
+	},
+	{
+		"Serie": "Gangstars",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Telugu",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "Madam Secretary",
+	},
+	{
+		"Serie": "Madam Secretary",
 		"Ano de lançamento": 2015,
 		"Temporadas disponíveis": 5,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "Marvel's Runaways",
+	},
+	{
+		"Serie": "Marvel's Runaways",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ficção científica"],
+		"Genero": [
+			"Drama",
+			"Ficção científica"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "One Tree Hill",
+	},
+	{
+		"Serie": "One Tree Hill",
 		"Ano de lançamento": 2004,
 		"Temporadas disponíveis": 9,
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "13+"
-	},{
-		"Série": "Absentia",
+	},
+	{
+		"Serie": "Absentia",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Suspense"],
+		"Genero": [
+			"Drama",
+			"Suspense"
+		],
 		"IMDb Avaliação": 7.3,
 		"Classificação": "16+"
-	},{
-		"Série": "Grimm",
+	},
+	{
+		"Serie": "Grimm",
 		"Ano de lançamento": 2012,
 		"Temporadas disponíveis": 6,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação", "Aventura"]
-	},{
-		"Série": "Heroes",
+		"Genero": [
+			"Drama",
+			"Ação",
+			"Aventura"
+		]
+	},
+	{
+		"Serie": "Heroes",
 		"Ano de lançamento": 2007,
 		"Temporadas disponíveis": 4,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ficção científica"]
-	},{
-		"Série": "Startup",
+		"Genero": [
+			"Drama",
+			"Ficção científica"
+		]
+	},
+	{
+		"Serie": "Startup",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8,
 		"Classificação": "18+"
-	},{
-		"Série": "Extant",
+	},
+	{
+		"Serie": "Extant",
 		"Ano de lançamento": 2014,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 6.6,
 		"Classificação": "16+"
-	},{
-		"Série": "Goliath",
+	},
+	{
+		"Serie": "Goliath",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 8.2,
 		"Classificação": "18+"
-	},{
-		"Série": "Station 19",
+	},
+	{
+		"Serie": "Station 19",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "16+"
-	},{
-		"Série": "Diablo Guardian",
+	},
+	{
+		"Serie": "Diablo Guardian",
 		"Ano de lançamento": 2018,
 		"Temporadas disponíveis": 2,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"IMDb Avaliação": 6,
 		"Classificação": "18+"
-	},{
-		"Série": "Lethal Weapon",
+	},
+	{
+		"Serie": "Lethal Weapon",
 		"Ano de lançamento": 2017,
 		"Temporadas disponíveis": 3,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama", "Ação"],
+		"Genero": [
+			"Drama",
+			"Ação"
+		],
 		"IMDb Avaliação": 7.9,
 		"Classificação": "16+"
-	},{
-		"Série": "Chernobyl: Aftermath",
+	},
+	{
+		"Serie": "Chernobyl: Aftermath",
 		"Ano de lançamento": 2016,
 		"Temporadas disponíveis": 1,
 		"Linguagem": "Inglês",
-		"Genero": ["Drama"],
+		"Genero": [
+			"Drama"
+		],
 		"Classificação": "13+"
-	}]
+	}
+]

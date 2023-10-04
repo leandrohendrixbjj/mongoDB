@@ -1,0 +1,2 @@
+"or": {$or: [{"Ano de lançamento":2018},  {"Classificação":"18+"}] }
+      

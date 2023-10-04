@@ -1,0 +1,2 @@
+=>Faz a atualização de um registro, caso um parâmetro não exista ele será substituido
+db.series.replaceOne({nome:"Got"}, {nome:"Got 3", "Ano":2020})

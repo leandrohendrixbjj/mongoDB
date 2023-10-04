@@ -1,0 +1,2 @@
+=>Ordena pela descrição da série
+db.series.find().sort({"Série":1})
