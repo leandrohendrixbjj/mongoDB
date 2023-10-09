@@ -1,2 +1,32 @@
-=>Faz a atualização de um registro, caso um parâmetro não exista ele será substituido
+
+// Update One
+db.series.updateOne({"Série": "Grimm"},{$set: {"Temporadas disponíveis": 6}})`
+
+// Update One => Cria o campo Classificação caso não exista no registro
+// que deve ser atualizado
+db.series.updateOne({"Série":"Grimm"}, {$set: {"Classificação":"16+"}});
+
+// updateMany => Cria o campo Ano de lançamento no objeto. Esse campo não existia
+db.series.updateMany({"Série":{$in:["House of the Dragon", "House of the Dragon 2"]}},{$set: {"Ano de lançamento": "2020"}})
+
+// unset => Apaga o campo do objeto
+db.series.updateOne({idade:55},{$unset:{nome:'Breaking Bad'}});
+
+// inc => Incrementa valores em um campos
+db.series.updateOne({nome:'Breaking Bad'},{$inc:{idade:1}});
+
+// inc => Decrementar valores em um campos
+db.series.updateOne({nome:'Breaking Bad'},{$inc:{idade: - 2}});
+
+// mul => Multiplca os valores
+db.series.updateOne({nome:'Breaking Bad'},{$mul:{idade:3}});
+
+// mul => Dividir os valores: divide por 2. Exemplo 1/3 por três, 1/4 por quatro etc
+db.series.updateOne({nome:'Breaking Bad'},{$mul:{idade:1/2}});
+
+//  Faz a atualização de um registro, caso um parâmetro não exista ele será substituido
 db.series.replaceOne({nome:"Got"}, {nome:"Got 3", "Ano":2020})
+
+
+
+
