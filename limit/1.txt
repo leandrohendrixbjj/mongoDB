@@ -1,2 +1,0 @@
-=> Apresenta os 5 primeiros 
-db.series.find().limit(5)

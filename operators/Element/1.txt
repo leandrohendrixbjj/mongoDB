@@ -1,0 +1,18 @@
+$exists(true) => matches the documents that contain the field, including documents where 
+                 the field value is null. 
+{age: {$exists:true}} 
+
+
+$exists(false) => matches the documents that NOT contain the field, including documents where 
+                  the field value is null. 
+{age: {$exists:false}} 
+
+
+=> This query will select all documents in the inventory collection where the qty 
+   field exists and its value DOES NOT equal 1 or 100.
+{age: {$exists:true, $nin:[1,100]}}
+
+$type => returns documents where the BSON type of the field matches the BSON 
+         type passed to
+
+{"Ano de lançamento":{$type:['double','int','string','null','decimal']}}         

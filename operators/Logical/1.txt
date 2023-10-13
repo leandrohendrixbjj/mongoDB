@@ -7,11 +7,9 @@ $not => Joins query clauses with a logical NOR returns all
 {$not: [{"Ano de lançamento":2010},  {"Classificação":"16+"}] }
 
 
-
 $or => Joins query clauses with a logical OR returns all 
        documents that match the conditions of either clause.
 {$or: [{"Ano de Lançamento":2012}, {"Linguagem":"Inglês"}]}
-
 
 
 $nor => Inverts the effect of a query expression and returns 

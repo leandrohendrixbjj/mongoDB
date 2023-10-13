@@ -2,6 +2,12 @@
 => Lista todos
 db.series.find() 
 
+=> Apresenta os 5 primeiros 
+db.series.find().limit(5)
+
+=>Ignora os dois primeiros registros
+db.series.find().skip(2)
+
 => Somente 2018
 db.series.find({"Ano de lançamento": 2018}) 
 
