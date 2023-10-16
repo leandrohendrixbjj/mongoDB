@@ -20,6 +20,8 @@ db.series.find({"Ano de lançamento": {$in: [2019,2020]}})
 =>Faz a busca ignorando o case sensitive
 db.series.find({nome:/leandro/i})
 
-=>Buscar tudo que possui letra a ou u
-db.series.find({nome:{$regex: /au/}});
+=>Dados que estão dentro de um array
+db.series.find({"Genero": {$all:["Ação", "Comédia"]}})
+
+
 

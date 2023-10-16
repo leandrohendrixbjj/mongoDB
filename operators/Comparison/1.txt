@@ -10,6 +10,9 @@
 // $in => Matches any of the values specified in an array.
 {"Linguagem":{$in:["2013", "2019"]}}
 
+// $nin => Matches none of the values specified in an array.
+{"Ano de lançamento":{$nin:[2010,1987]}}
+
 // $lt => Matches values that are less than a specified value.
 {"Temporadas disponíveis": {$lt:5}}
 
@@ -19,9 +22,7 @@
 // $ne => Matches all values that are not equal to a specified value.
 {"Linguagem":{$ne:"Inglês"}}
 
-// $nin => Matches none of the values specified in an array.
-// Such as $ne but it acept an array
-{"Ano de lançamento":{$nin:[2010,1987]}}
+
 
 
 

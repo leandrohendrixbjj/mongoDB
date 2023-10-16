@@ -1,0 +1,29 @@
+$expr => can build query expressions that compare fields from the same document 
+         in a $match stage. In this case we will print all documents where 
+         age is great than price.
+{$expr: { $gt: [ "$age", "$price"] } }
+
+$mod => Then, the following query selects those documents in the inventory collection 
+         where value of the qty field modulo 4 equals 0:
+
+db.inventory.insertMany( [
+   { "_id" : 1, "item" : "abc123", "qty" : 0 },
+   { "_id" : 2, "item" : "xyz123", "qty" : 5 },
+   { "_id" : 3, "item" : "ijk123", "qty" : 12 }
+] )
+
+Result: { "_id" : 1, "item" : "abc123", "qty" : 0 }
+        { "_id" : 3, "item" : "ijk123", "qty" : 12 }
+
+regex => Buscar tudo que possui letra a ou u
+db.series.find({nome:{$regex: /au/i}});
+
+regex => ignorando case sensitive
+{"Serie":{$regex:/au/, $options:'i'}}
+
+$text =>  operator assigns a score to each document that contains the search 
+          term in the indexed fields. Make sure that field you are searching
+          it has a index. I dont it will not work
+{$text: { $search: "got" } }          
+
+ 

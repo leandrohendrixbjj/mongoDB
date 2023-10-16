@@ -8,9 +8,13 @@ $exists(false) => matches the documents that NOT contain the field, including do
 {age: {$exists:false}} 
 
 
-=> This query will select all documents in the inventory collection where the qty 
+$nin => This query will select all documents in the inventory collection where the qty 
    field exists and its value DOES NOT equal 1 or 100.
 {age: {$exists:true, $nin:[1,100]}}
+
+$in => This query will select all documents in the inventory collection where the qty 
+   field exists and its value IS equal 1 or 100.
+{age: {$exists:true, $in:[1,100]}}
 
 $type => returns documents where the BSON type of the field matches the BSON 
          type passed to
