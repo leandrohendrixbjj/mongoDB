@@ -1,4 +1,7 @@
 
+=>Faz a contagem de documentos
+db.series.countDocuments()
+
 => Lista todos
 db.series.find() 
 
@@ -22,6 +25,10 @@ db.series.find({nome:/leandro/i})
 
 =>Dados que estão dentro de um array
 db.series.find({"Genero": {$all:["Ação", "Comédia"]}})
+
+=>Ordena pela descrição da série
+db.series.find().sort({"Série":1})
+
 
 
 

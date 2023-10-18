@@ -1,0 +1,12 @@
+$all => Matches ARRAYS that contain all elements specified in the query.
+{"Genero":{$all:['Artes','Cultura']}}
+
+$elemMatch => Selects documents if element in the array field matches all the specified 
+              conditions.
+{"results":{$elemMatch:{$gte:1, $lte:3}}}
+
+{ _id: 1, results: [ 1, 2, 3 ] } 
+{ _id: 2, results: [ 75, 88, 89 ] }
+
+$size => Selects documents if the array field is a specified size.
+{"results":{$size:3}}
