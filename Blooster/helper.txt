@@ -1,0 +1,9 @@
+db.version() => Print the version
+
+db.hostInfo() => Host details
+
+db.getName() => Database name
+
+db.stats() => Details of database
+
+db.listCommands() => Lista de comandos

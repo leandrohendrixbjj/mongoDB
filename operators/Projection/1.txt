@@ -32,6 +32,11 @@ RETURN
 $elemMatch (query) => projection returns only the first matching element of the students 
                       array where the school field has a value of 102:
 
+db.teste.find({"zipcode":63109}, {"students": {"school":102}} )
+   .projection({})
+   .sort({_id:-1})
+   .limit(100)                      
+
 {
  _id: 1,
  zipcode: "63109",
@@ -73,7 +78,7 @@ RETURN: { "_id" : 1, "students" : [ { "name" : "john", "school" : 102, "age" : 1
 OR
 
 db.schools.find( { zipcode: "63109" },
-                 { students: { $elemMatch: { school: 102, age: { $gt: 10} } } } )
+                 { students: { $elemMatch: { school: 102, age: { $gt: 10} } } } )   
 
 
 
