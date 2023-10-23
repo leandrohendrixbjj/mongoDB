@@ -27,7 +27,53 @@ db.series.find({"grades.mean":{$gt:70}},{"grades.$":1})
 
 RETURN
 { "_id" : 7, "grades" : [  {  "grade" : 80,  "mean" : 75,  "std" : 8 } ] }
-{ "_id" : 8, "grades" : [  {  "grade" : 92,  "mean" : 88,  "std" : 8 } ] }                               
+{ "_id" : 8, "grades" : [  {  "grade" : 92,  "mean" : 88,  "std" : 8 } ] }       
+
+$elemMatch (query) => projection returns only the first matching element of the students 
+                      array where the school field has a value of 102:
+
+{
+ _id: 1,
+ zipcode: "63109",
+ students: [
+              { name: "john", school: 102, age: 10 },
+              { name: "jess", school: 102, age: 11 },
+              { name: "jeff", school: 108, age: 15 }
+           ]
+}
+{
+ _id: 2,
+ zipcode: "63110",
+ students: [
+              { name: "ajax", school: 100, age: 7 },
+              { name: "achilles", school: 100, age: 8 },
+           ]
+}
+{
+ _id: 3,
+ zipcode: "63109",
+ students: [
+              { name: "ajax", school: 100, age: 7 },
+              { name: "achilles", school: 100, age: 8 },
+           ]
+}
+{
+ _id: 4,
+ zipcode: "63109",
+ students: [
+              { name: "barney", school: 102, age: 7 },
+              { name: "ruth", school: 102, age: 16 },
+           ]
+}
+Obs: return  { "_id" : 3 } because its is such as zipcode: "63109"
+RETURN: { "_id" : 1, "students" : [ { "name" : "john", "school" : 102, "age" : 10 } ] }
+        { "_id" : 3 }
+        { "_id" : 4, "students" : [ { "name" : "barney", "school" : 102, "age" : 7 } ] }
+
+OR
+
+db.schools.find( { zipcode: "63109" },
+                 { students: { $elemMatch: { school: 102, age: { $gt: 10} } } } )
 
 
 
