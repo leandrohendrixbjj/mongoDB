@@ -17,14 +17,8 @@ db.series.find({"Ano de lançamento": 2018})
 => Somente os campos Série e Ano de lançamento
 db.series.find({},{"Série":1, "Ano de lançamento": 1, "_id":0})
 
-=> Ano de lançamento igual 2019 e 2020
-db.series.find({"Ano de lançamento": {$in: [2019,2020]}})
-
 =>Faz a busca ignorando o case sensitive
 db.series.find({nome:/leandro/i})
-
-=>Dados que estão dentro de um array
-db.series.find({"Genero": {$all:["Ação", "Comédia"]}})
 
 =>Ordena pela descrição da série
 db.series.find().sort({"Série":1})

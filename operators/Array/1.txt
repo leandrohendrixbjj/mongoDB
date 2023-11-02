@@ -8,5 +8,5 @@ $elemMatch => Selects documents if element in the array field matches all the sp
 { _id: 1, results: [ 1, 2, 3 ] } 
 { _id: 2, results: [ 75, 88, 89 ] }
 
-$size => Selects documents if the array field is a specified size.
-{"results":{$size:3}}
+$size => Takes the length of an array
+{"results":{$size:1}}

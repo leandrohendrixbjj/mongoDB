@@ -80,5 +80,33 @@ OR
 db.schools.find( { zipcode: "63109" },
                  { students: { $elemMatch: { school: 102, age: { $gt: 10} } } } )   
 
+"slice": return the array with its last three elements. 
+         If the array has less than three elements, all elements in the array are returned.
+         
+         db.teste.find({comments: {$exists: true}})
+         .projection({comments: {$slice:3}, "_id":-1})
+         .sort({_id:-1})
+         .limit(100)
+
+"slice": return the array with its last two elements. 
+
+          db.teste.find({comments: {$exists: true}})
+         .projection({comments: {$slice:[0,2]}, "_id":-1})
+         .sort({_id:-1})
+         .limit(100)
+
+Object => 
+{
+   "_id" : 1,
+   "title" : "Bagels are not croissants.",
+   "comments" : [ { "comment" : "1. croissants aren't bagels." } ]
+},
+{
+   "_id" : 2,
+   "title" : "Coffee please.",
+   "comments" : [ { "comment" : "1. tea please" }, { "comment" : "2. iced coffee" }, { "comment" : "3. cappuccino" } ]
+}         
+         
+
 
 
