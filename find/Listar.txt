@@ -5,6 +5,9 @@ db.series.countDocuments()
 => Lista todos
 db.series.find() 
 
+=> Lista o primeiro registro
+db.series.findOne()
+
 => Apresenta os 5 primeiros 
 db.series.find().limit(5)
 
