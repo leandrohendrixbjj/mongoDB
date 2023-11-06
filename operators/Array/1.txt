@@ -10,3 +10,9 @@ $elemMatch => Selects documents if element in the array field matches all the sp
 
 $size => Takes the length of an array
 {"results":{$size:1}}
+
+$size and $all => Takes Genero only like a Drama
+db.series.find({"Genero": {$all: ['Drama'], $size:1} })
+.projection({"Serie":1, "Genero":1, "_id":-1})
+.sort({_id:-1})
+.limit(100)
