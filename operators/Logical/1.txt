@@ -2,12 +2,30 @@ $and => Joins query clauses with a logical AND returns all
         documents that match the conditions of both clauses.
 {$and: [{"Ano de lançamento":2018},  {"Classificação":"18+"}] }
 
+db.Contas.find({ 
+  $and: [
+    { tipo: { $eq:'Conta salário' }, valor:{ $gte:9000 } }
+  ]
+}).project({tipo:1, valor:1})
+
 $or => Joins query clauses with a logical OR returns all 
        documents that match the conditions of either clause.
 {$or: [{"Ano de Lançamento":2012}, {"Linguagem":"Inglês"}]}
+
+db.Contas.find({ 
+  $or: [
+    { tipo: { $eq:'Conta salário' }, valor:{ $gte:9000 } }
+  ]
+}).project({tipo:1, valor:1})
 
 
 $nor => Inverts the effect of a query expression and returns 
         documents that do not match the query expression.
 {$nor: [{"Ano de Lançamento":2012}, {"Linguagem":"Inglês"}]}
+
+db.Enderecos.find({
+   $nor: [{
+       estado:{$eq:'SP'}
+   }]
+}).project({cidade:1, estado:1}).sort({cidade:1})
 

@@ -17,6 +17,12 @@ $in => This query will select all documents in the inventory collection where th
 {age: {$exists:true, $in:[1,100]}}
 
 $type => returns documents where the BSON type of the field matches the BSON 
-         type passed to
+         type passed to. Types: https://www.mongodb.com/docs/manual/reference/bson-types/
 
-{"Ano de lançamento":{$type:['double','int','string','null','decimal']}}         
+db.teste.find({
+    $and: [ { nome: {$exists:true} }, {age: {$type: 2}}] // Tipos String
+}).count()
+
+db.teste.find({
+  $and: [ { nome: {$exists:true} }, {age: {$type: 16}} ] // Tipos Int
+}).count()
