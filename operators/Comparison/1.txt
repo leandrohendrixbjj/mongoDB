@@ -22,6 +22,21 @@
 // $ne => Matches all values that are not equal to a specified value.
 {"Linguagem":{$ne:"Inglês"}}
 
+// $gt and $and
+db.series.find({
+    $and: [
+        {"Temporadas disponíveis": {$gt:2}},
+        {"Linguagem": {$eq:'Inglês'}}
+    ]
+})
+// $gte, $lte and $and Between
+db.series.find({
+    $and: [
+        { "Ano de lançamento": {$gte:2010} },
+        { "Ano de lançamento": {$lte:2018} }
+    ]
+})
+
 
 
 
