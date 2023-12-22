@@ -20,11 +20,17 @@ db.series.find({"Ano de lançamento": 2018})
 => Somente os campos Série e Ano de lançamento
 db.series.find({},{"Série":1, "Ano de lançamento": 1, "_id":0})
 
-=>Faz a busca ignorando o case sensitive
+=> Faz a busca ignorando o case sensitive
 db.series.find({nome:/leandro/i})
 
-=>Ordena pela descrição da série
+=> Ordena pela descrição da série
 db.series.find().sort({"Série":1})
+
+=> Busca o total de registros de uma collection 
+db.clientes.find().count()
+
+=> Busca os valores sem duplicidade
+db.contas.distinct("tipo")
 
 
 

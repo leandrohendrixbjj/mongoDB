@@ -29,3 +29,24 @@ db.Enderecos.find({
    }]
 }).project({cidade:1, estado:1}).sort({cidade:1})
 
+$or AND and => Both at the same search
+db.contas.find({
+    $and: [       
+        {"valor": {$gte: 8500}}
+    ],
+    $or: [
+        {"tipo": /salário/i},
+        {"tipo": /poupança/i},
+    ]
+}).projection({"numero_conta":1, "tipo":1, "valor":1}).sort({"valor":1})
+
+=>The same result of the search above
+
+db.contas.find({
+    $or: [
+        {"tipo": {$in: ["Conta salário","Conta poupança"]} }
+    ],
+    "valor":{$gte:8500}
+})
+.projection({"tipo":1, "valor":1})
+.sort({"valor":1})
