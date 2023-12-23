@@ -1,0 +1,5 @@
+=> Apresenta os index da collection
+db.clientes.getIndexes()
+
+=> Remove Index
+db.clientes.dropIndex({indexName})

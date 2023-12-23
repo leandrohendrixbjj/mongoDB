@@ -3,6 +3,8 @@ $expr => can build query expressions that compare fields from the same document
          age is great than price.
 {$expr: { $gt: [ "$age", "$price"] } }
 
+
+        db.inventory.find({"qty": {$mod: [4,0]}})
 $mod => Then, the following query selects those documents in the inventory collection 
          where value of the qty field modulo 4 equals 0:
 
@@ -21,9 +23,5 @@ db.series.find({nome:{$regex: /au/i}});
 regex => ignorando case sensitive
 {"Serie":{$regex:/au/, $options:'i'}}
 
-$text =>  operator assigns a score to each document that contains the search 
-          term in the indexed fields. Make sure that field you are searching
-          it has a index. I dont it will not work
-{$text: { $search: "got" } }          
 
  
