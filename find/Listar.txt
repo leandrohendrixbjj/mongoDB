@@ -9,9 +9,15 @@ db.series.find()
 db.series.findOne()
 
 => Apresenta os 5 primeiros 
+db.series.aggregate({$limit:5});
+
+=> Busca e apresenta os 5 primeiros 
 db.series.find().limit(5)
 
-=>Ignora os dois primeiros registros
+=> Busca e ignora os dois primeiros registros
+db.series.aggregate({$skip:2});
+
+=> Busca e ignora os dois primeiros registros
 db.series.find().skip(2)
 
 => Somente 2018
@@ -26,11 +32,53 @@ db.series.find({nome:/leandro/i})
 => Ordena pela descrição da série
 db.series.find().sort({"Série":1})
 
-=> Busca o total de registros de uma collection 
+=> Conta o total de registros de uma collection 
+db.clientes.count()
+
+=> Conta o total de registros de uma collection ( Com alias ) 
+db.clientes.aggregate({$count: "Total de Clientes"})
+
+=> Busca e conta o total de registros de uma collection 
 db.clientes.find().count()
+
+=> Busca e Ordena por valor
+db.series.find().sort({"Serie":1});
+
+=> Ordena por valor
+db.series.aggregate([
+  {$sort: {"Serie":1}}
+]);
+
+=> Limit, Skip and Sort
+db.series.aggregate([
+    {$limit: 50},
+    {$skip: 10},
+    {$sort: {"Serie":1}}
+])
 
 => Busca os valores sem duplicidade
 db.contas.distinct("tipo")
+
+=> Group by campo contas
+db.contas.aggregate({$group: { _id: "$tipo", ContagemDeContas:{$count:{}}}})
+
+=> Group by and Sum 
+db.vendas.aggregate({
+    $group: {
+        _id: "$produto", Contagem:{$count:{}},
+        Total: {$sum: "$valor"}
+    }
+})
+
+=> Group by and Sum (Completo)
+db.contas.aggregate({
+    $group: { 
+        _id: "$tipo", Contagem: {$count: {}},
+        TotalEmValor:{$sum: "$valor"},
+        TotalEmClientes: {$sum: "$id_cliente"}
+    }
+})
+
 
 
 
