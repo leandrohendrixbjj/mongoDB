@@ -7,7 +7,7 @@ db.series.updateOne({"Série": "Grimm"},{$set: {"Temporadas disponíveis": 6}})`
 db.series.updateOne({"Série":"Grimm"}, {$set: {"Classificação":"16+"}});
 
 // updateMany => Cria o campo Ano de lançamento no objeto. Esse campo não existia
-db.series.updateMany({"Série":{$in:["House of the Dragon", "House of the Dragon 2"]}},{$set: {"Ano de lançamento": "2020"}})
+  db.series.updateMany({"Série":{$in:["House of the Dragon", "House of the Dragon 2"]}},{$set: {"Ano de lançamento": "2020"}})
 
 // unset => Apaga o campo do objeto
 db.series.updateOne({idade:55},{$unset:{nome:'Breaking Bad'}});

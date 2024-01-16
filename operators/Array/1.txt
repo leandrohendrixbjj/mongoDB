@@ -16,3 +16,17 @@ db.series.find({"Genero": {$all: ['Drama'], $size:1} })
 .projection({"Serie":1, "Genero":1, "_id":-1})
 .sort({_id:-1})
 .limit(100)
+
+$unwind => Exibe as linhas de um campo tipo array
+db.clientes.aggregate([
+    {$unwind: "$seguros"}
+])
+
+$sortByCount => Conta numero de seguros por Genero
+db.clientes.aggregate([
+    {$unwind: "$seguros"},
+    {$sortByCount: "$genero"}
+])
+
+
+

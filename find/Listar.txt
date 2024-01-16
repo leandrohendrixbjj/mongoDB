@@ -29,6 +29,30 @@ db.series.find({},{"Série":1, "Ano de lançamento": 1, "_id":0})
 => Faz a busca ignorando o case sensitive
 db.series.find({nome:/leandro/i})
 
+=> $match: faz a busca por estado
+db.enderecos.aggregate([{$match: {"estado":'SE'}}])
+
+=> $match with $and
+db.contas.aggregate([
+    {$match:
+       {$and: [
+        {"tipo": "Conta salário"},
+        {"valor": {$gt: 8500}}
+       ]}
+    }
+]).sort({valor:1})
+
+=> $match with group
+db.contas.aggregate([
+    {$match:
+       {$and: [
+        {"tipo": "Conta salário"},
+        {"valor": {$gt: 8500}}
+       ]}
+    },
+    {$group: { _id: "$tipo", contagem:{$count: {}}}}
+]).sort({valor:1})
+
 => Ordena pela descrição da série
 db.series.find().sort({"Série":1})
 
