@@ -8,7 +8,7 @@ $elemMatch => Selects documents if element in the array field matches all the sp
 { _id: 1, results: [ 1, 2, 3 ] } 
 { _id: 2, results: [ 75, 88, 89 ] }
 
-$size => Takes the length of an array
+$size => Takes the length of an arrayx'
 {"results":{$size:1}}
 
 $size and $all => Takes Genero only like a Drama
@@ -27,6 +27,12 @@ db.clientes.aggregate([
     {$unwind: "$seguros"},
     {$sortByCount: "$genero"}
 ])
+
+$sortByCount => Conta numero de Generos das Series
+db.series.aggregate(
+    {$unwind: "$Genero"},
+    {$sortByCount: "$Genero"}
+).sort({"Genero":1})
 
 
 

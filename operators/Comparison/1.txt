@@ -29,6 +29,7 @@ db.series.find({
         {"Linguagem": {$eq:'Inglês'}}
     ]
 })
+
 // $gte, $lte and $and Between
 db.series.find({
     $and: [
@@ -36,6 +37,15 @@ db.series.find({
         { "Ano de lançamento": {$lte:2018} }
     ]
 })
+
+// Regexp with and
+db.series.find(
+    {$and:[
+      {"Genero":/drama/i},
+      {"Genero": {$size:1}}
+    ]
+    }
+);
 
 
 

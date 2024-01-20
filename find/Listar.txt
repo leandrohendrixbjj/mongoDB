@@ -103,6 +103,30 @@ db.contas.aggregate({
     }
 })
 
+=> $lookup => Tipo de left join
+db.clientes.aggregate([{
+    $lookup: {
+           from: "contas",
+           localField: "cpf",
+           foreignField: "cpf",
+           as: "clientes_contas"
+         }
+}])
+
+=> $lookup => Tipo de left join com restrição de campos
+db.clientes.aggregate([{
+    $lookup: {
+           from: "contas",
+           localField: "cpf",
+           foreignField: "cpf",
+           as: "clientes_contas"
+        }
+    },
+    {$project: {_id:0, data_nascimento:0, genero:0, profissao:0}},
+    {$limit: 5}
+])
+
+
 
 
 
