@@ -8,14 +8,8 @@ db.series.find()
 => Lista o primeiro registro
 db.series.findOne()
 
-=> Apresenta os 5 primeiros 
-db.series.aggregate({$limit:5});
-
 => Busca e apresenta os 5 primeiros 
 db.series.find().limit(5)
-
-=> Busca e ignora os dois primeiros registros
-db.series.aggregate({$skip:2});
 
 => Busca e ignora os dois primeiros registros
 db.series.find().skip(2)
@@ -32,35 +26,11 @@ db.series.find({nome:/leandro/i})
 => $match: faz a busca por estado
 db.enderecos.aggregate([{$match: {"estado":'SE'}}])
 
-=> $match with $and
-db.contas.aggregate([
-    {$match:
-       {$and: [
-        {"tipo": "Conta salário"},
-        {"valor": {$gt: 8500}}
-       ]}
-    }
-]).sort({valor:1})
-
-=> $match with group
-db.contas.aggregate([
-    {$match:
-       {$and: [
-        {"tipo": "Conta salário"},
-        {"valor": {$gt: 8500}}
-       ]}
-    },
-    {$group: { _id: "$tipo", contagem:{$count: {}}}}
-]).sort({valor:1})
-
 => Ordena pela descrição da série
 db.series.find().sort({"Série":1})
 
 => Conta o total de registros de uma collection 
 db.clientes.count()
-
-=> Conta o total de registros de uma collection ( Com alias ) 
-db.clientes.aggregate({$count: "Total de Clientes"})
 
 => Busca e conta o total de registros de uma collection 
 db.clientes.find().count()
@@ -68,68 +38,5 @@ db.clientes.find().count()
 => Busca e Ordena por valor
 db.series.find().sort({"Serie":1});
 
-=> Ordena por valor
-db.series.aggregate([
-  {$sort: {"Serie":1}}
-]);
-
-=> Limit, Skip and Sort
-db.series.aggregate([
-    {$limit: 50},
-    {$skip: 10},
-    {$sort: {"Serie":1}}
-])
-
 => Busca os valores sem duplicidade
 db.contas.distinct("tipo")
-
-=> Group by campo contas
-db.contas.aggregate({$group: { _id: "$tipo", ContagemDeContas:{$count:{}}}})
-
-=> Group by and Sum 
-db.vendas.aggregate({
-    $group: {
-        _id: "$produto", Contagem:{$count:{}},
-        Total: {$sum: "$valor"}
-    }
-})
-
-=> Group by and Sum (Completo)
-db.contas.aggregate({
-    $group: { 
-        _id: "$tipo", Contagem: {$count: {}},
-        TotalEmValor:{$sum: "$valor"},
-        TotalEmClientes: {$sum: "$id_cliente"}
-    }
-})
-
-=> $lookup => Tipo de left join
-db.clientes.aggregate([{
-    $lookup: {
-           from: "contas",
-           localField: "cpf",
-           foreignField: "cpf",
-           as: "clientes_contas"
-         }
-}])
-
-=> $lookup => Tipo de left join com restrição de campos
-db.clientes.aggregate([{
-    $lookup: {
-           from: "contas",
-           localField: "cpf",
-           foreignField: "cpf",
-           as: "clientes_contas"
-        }
-    },
-    {$project: {_id:0, data_nascimento:0, genero:0, profissao:0}},
-    {$limit: 5}
-])
-
-
-
-
-
-
-
-
