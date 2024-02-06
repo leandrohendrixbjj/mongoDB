@@ -127,4 +127,50 @@ db.contas.aggregate({
     precoDesconto:1
 })
 
+$concat => Concatena Strings
+db.clientes.aggregate([{
+    $project: {
+        descricao:{
+            $concat: ["$nome","-","$cpf" ]
+        }
+    }
+}])
+
+$split => Quebra uma string em pedaços
+db.clientes.aggregate([{
+    $project: {
+        descricao:{
+            $split: ["$nome"," " ]
+        }
+    }
+}])
+
+$toLower => Retorna uma string em minúscula
+$toUpper => Retorna uma string em maiúscula
+db.clientes.aggregate([{
+    $project: {
+        descricao:{
+            $toLower: "$nome"
+        }
+    }
+}])
+
+$toString => Converte um campo double em String
+db.contas.aggregate([{
+    $project: {
+        valotStr:{
+            $toString: "$valor"
+        }
+    }
+}])
+
+$concat e $toString
+db.contas.aggregate([{
+    $project: {
+        descricao:{
+            $concat: ["O cliente e CPF", "$cpf", " possui o valor de ", {$toString: "$valor"}, " na ", "$tipo" ]
+        }
+    }
+}])
+
 
