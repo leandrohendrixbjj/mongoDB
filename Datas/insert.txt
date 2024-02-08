@@ -1,0 +1,12 @@
+=> new Date() => Obtem a data e hora atual do sistema
+=> ISODate("1999-01-13T19:00:00.000-02:00") => Hora UTC 
+db.teste.insertOne(
+    {
+        "nome": "C",
+        "cpf": "625.181.705-45",
+        "data_nascimento": new Date(),
+        "dt": ISODate("1999-01-13T19:00:00.000-02:00"),
+        "genero": "Feminino",
+        "profissao": "Professor nível médio na educação infantil",
+        "status_civil": "Casado(a)"
+})

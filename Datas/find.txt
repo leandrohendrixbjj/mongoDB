@@ -1,0 +1,39 @@
+=> $year: extrair o ano de uma data
+db.clientes.aggregate({
+    $project: {
+        nome: "$nome",
+        ano_nascimento:{
+            $year: "$data_nascimento"
+        }
+    }
+})
+
+=> month: extrair o mes de uma data
+db.clientes.aggregate({
+    $project: {
+        nome: "$nome",
+        mes_nascimento:{
+            $month:"$data_nascimento"
+        }
+    }
+})
+
+=> $dayOfWeek: extrair o dia da semana
+db.clientes.aggregate({
+    $project: {
+        nome: "$nome",
+        data_nascimento: "$data_nascimento",
+        dia_da_semana_nascimento:{
+            $dayOfWeek: "$data_nascimento"
+        }
+    }
+})
+
+=> Apresenta data separada por hora, mes, dia.....
+db.clientes.aggregate([{
+  $project:{
+    data:{
+      $dateToParts:{date:"$data_nascimento"}
+    }
+  }
+}])
