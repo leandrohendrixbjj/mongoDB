@@ -27,6 +27,12 @@ db.series.updateOne({nome:'Breaking Bad'},{$mul:{idade:1/2}});
 //  Faz a atualização de um registro, caso um parâmetro não exista ele será substituido
 db.series.replaceOne({nome:"Got"}, {nome:"Got 3", "Ano":2020})
 
+// Add uma nova linha no objeto
+db.clientes.updateOne({"_id":1},{$push:{seguros:"seguro de vida"}})
+
+// Renomea o nome de um atributo
+db.clientes.updateMany({},{$rename:{"cpf":"CPF"}})
+
 
 
 

@@ -1,0 +1,40 @@
+=> True or False
+db.contas.aggregate([{
+   $project:{
+         cpf:1,
+             tipo:1,
+             valores:{
+                 $cond:[{$gte:["$valor",8000]}, "true", "false"]
+             }
+        }
+}])
+
+=> ifNull
+db.contas.aggregate([{
+   $project:{
+         cpf:1,
+             tipo:1,
+             valores:{
+                 $ifNull: [ "$valor", "Unspecified" ]
+             }
+        }
+}])
+
+=> switch
+db.contas.aggregate([{
+    $project: {
+        valor:1,
+        condicao:{
+            $switch: {
+              branches: [
+                 { case: {$lte:["$valor",1000]}, then: "valor abaixo do esperado" },
+                 {case: {
+                           $and:[{$gte:["$valor",1001]},
+                           {$lte:["$valor",90000]}]}, then:"valor na media"}
+              ],
+              default: "default value"
+            }
+        }
+    }
+}])
+
