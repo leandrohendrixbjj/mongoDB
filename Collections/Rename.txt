@@ -1,4 +1,0 @@
-// Resomear Collections
-db.Clientes.renameCollection("clientes")
-db.Contas.renameCollection("contas")
-db.Enderecos.renameCollection("enderecos")

@@ -1,0 +1,19 @@
+=> Criar Collections
+db.createCollection("customer");
+
+=> Renomear Collections
+db.customer.renameCollection("customers")
+
+=> Apresenta Collections
+show collections
+
+=> Criar Registros
+db.customers.insertOne({
+    "_id": ObjectId(),
+    "cpf": 123,
+    "name": "Leandro",
+    "age": 30
+})
+
+=> Remover Collection
+db.customers.drop()

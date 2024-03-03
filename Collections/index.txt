@@ -1,5 +1,8 @@
-=> Apresenta os index da collection
-db.clientes.getIndexes()
+=> Cirar index
+db.customers.createIndex({cpf:1}, {name:"cpf"})
+
+=> Apresenta index
+db.customers.getIndexes()
 
 => Remove Index
-db.clientes.dropIndex({indexName})
+db.customers.dropIndex({indexName})

@@ -7,5 +7,3 @@ db.getName() => Database name
 db.stats() => Details of database
 
 db.listCommands() => Lista de comandos
-
-db.Endereco.renameCollection("Enderecos") => Renomea a Collection
