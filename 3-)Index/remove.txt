@@ -1,0 +1,2 @@
+=> Remove Index
+db.customers.dropIndex({indexName})

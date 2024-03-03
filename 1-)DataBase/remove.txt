@@ -1,0 +1,6 @@
+=> Remove a Database
+db.getSiblingDB({databaseName}).dropDatabase();
+
+=> Example
+db.getSiblingDB("Financeiro").dropDatabase();
+

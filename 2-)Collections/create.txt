@@ -2,10 +2,7 @@
 db.createCollection("customer");
 
 => Renomear Collections
-db.customer.renameCollection("customers")
-
-=> Apresenta Collections
-show collections
+db.customer.renameCollection("customers");
 
 => Criar Registros
 db.customers.insertOne({
@@ -14,6 +11,3 @@ db.customers.insertOne({
     "name": "Leandro",
     "age": 30
 })
-
-=> Remover Collection
-db.customers.drop()

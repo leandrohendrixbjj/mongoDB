@@ -1,0 +1,11 @@
+=> Show all databases
+show databases;
+
+=> Show Database name
+db.getName()
+
+=> Mongo Version
+db.version()
+
+=> Details of database
+db.stats() 

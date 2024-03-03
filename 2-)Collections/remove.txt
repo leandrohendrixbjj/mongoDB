@@ -1,0 +1,2 @@
+=> Remover Collection
+db.customers.drop()

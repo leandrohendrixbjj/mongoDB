@@ -1,8 +1,0 @@
-[
-    {
-        "show databases": "Apresenta as bases de dados",
-        "use {nomeBanco}": "Cria um novo banco",
-        "criarCollection": "db.createCollection('nameColection')",
-        "remove uma collection": "db.nameColection.drop()"
-    }
-]

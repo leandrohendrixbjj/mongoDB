@@ -1,0 +1,5 @@
+=> Host details
+db.hostInfo() 
+
+=> Lista de comandos
+db.listCommands() 

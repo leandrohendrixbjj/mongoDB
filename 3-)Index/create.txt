@@ -1,0 +1,2 @@
+=> Cirar index
+db.customers.createIndex({cpf:1}, {name:"cpf"})

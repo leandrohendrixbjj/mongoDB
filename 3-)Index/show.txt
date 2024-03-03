@@ -1,0 +1,2 @@
+=> Apresenta index
+db.customers.getIndexes()
