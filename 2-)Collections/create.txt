@@ -9,5 +9,7 @@ db.customers.insertOne({
     "_id": ObjectId(),
     "cpf": 123,
     "name": "Leandro",
-    "age": 30
+    "age": 30,
+    "data_actual": new Date(),
+    "data_utc": ISODate("1999-01-13T19:00:00.000-02:00")
 })
