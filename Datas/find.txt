@@ -1,4 +1,4 @@
-=> $year: extrair o ano de uma data
+=> $YEAR: extrair o ano de uma data
 db.clientes.aggregate({
     $project: {
         nome: "$nome",
@@ -8,7 +8,7 @@ db.clientes.aggregate({
     }
 })
 
-=> month: extrair o mes de uma data
+=> MONTH: extrair o mes de uma data
 db.clientes.aggregate({
     $project: {
         nome: "$nome",
@@ -18,18 +18,7 @@ db.clientes.aggregate({
     }
 })
 
-=> $dayOfWeek: extrair o dia da semana
-db.clientes.aggregate({
-    $project: {
-        nome: "$nome",
-        data_nascimento: "$data_nascimento",
-        dia_da_semana_nascimento:{
-            $dayOfWeek: "$data_nascimento"
-        }
-    }
-})
-
-=> Apresenta data separada por hora, mes, dia.....
+=> DATE_TO_PARTS => Apresenta data separada por hora, mes, dia.....
 db.clientes.aggregate([{
   $project:{
     data:{
@@ -37,3 +26,17 @@ db.clientes.aggregate([{
     }
   }
 }])
+
+=> DATE_TO_STRING => Apresenta a data formatada
+db.clientes.aggregate({
+    $project: {
+        nome: "$nome",
+        dt_nasc: {
+            $dateToString: { 
+                format: "%Y-%m-%d", 
+                date: "$data_nascimento" ,
+                timezone: "+08:00",
+            }
+        }
+    }
+})
