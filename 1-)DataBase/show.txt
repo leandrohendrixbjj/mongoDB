@@ -9,3 +9,10 @@ db.version()
 
 => Details of database
 db.stats() 
+
+=> Host details
+db.hostInfo() 
+
+=> Lista de comandos
+db.listCommands() 
+

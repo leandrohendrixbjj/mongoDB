@@ -1,2 +1,0 @@
-// Remove contas com valor mais que 1000
-db.contas.findOneAndDelete({valor:{$lt:100}},{sort:{valor:1}})

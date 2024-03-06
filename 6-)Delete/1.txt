@@ -1,0 +1,15 @@
+// Remover dados de uma collection
+
+db.clientes.insertOne({
+  name:'Soares',
+  created_at: new Date(),
+  age: 20
+})
+
+db.clientes.insertOne({
+  name:'Leandro',
+  created_at: new Date(),
+  age: 10
+})
+
+db.clientes.findOneAndDelete({name:'Leandro'})

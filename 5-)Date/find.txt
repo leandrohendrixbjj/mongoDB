@@ -33,7 +33,7 @@ db.clientes.aggregate({
         nome: "$nome",
         dt_nasc: {
             $dateToString: { 
-                format: "%Y-%m-%d", 
+                format: "%d-%m-%Y", 
                 date: "$data_nascimento" ,
                 timezone: "+08:00",
             }
