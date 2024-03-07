@@ -1,0 +1,17 @@
+=> $COUNT: Conta o total de registros de uma collection 
+db.clientes.count();
+
+=> $DISTINCT: Busca os valores sem duplicidade
+db.contas.distinct("tipo")
+
+=> $FINDONE: Lista o primeiro registro
+db.series.findOne()
+
+=> $LIMIT: Busca e apresenta os 5 primeiros 
+db.series.find().limit(5)
+
+=> $SKIP: Busca e ignora os dois primeiros registros
+db.series.find().skip(2)
+
+=> $MATCH: faz a busca por estado
+db.enderecos.aggregate([{$match: {"estado":'SE'}}])

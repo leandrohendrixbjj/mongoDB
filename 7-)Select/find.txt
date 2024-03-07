@@ -1,0 +1,18 @@
+
+=> $FIND: Lista todos
+db.series.find(); 
+
+=> $FIND: Somente 2018
+db.series.find({"Ano de lançamento": 2018}) 
+
+=> $FIND: Somente os campos Série e Ano de lançamento
+db.series.find({},{"Série":1, "Ano de lançamento": 1, "_id":0})
+
+=> $FIND: Faz a busca ignorando o case sensitive
+db.series.find({nome:/leandro/i})
+
+=> $SORT: Ordena os registros ASC
+db.series.find().sort({"Serie":1});
+
+=> $SORT: Ordena os registros DESC
+db.series.find().sort({"Serie":-1});
