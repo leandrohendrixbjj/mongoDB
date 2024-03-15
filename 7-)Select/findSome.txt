@@ -1,5 +1,5 @@
 => $COUNT: Conta o total de registros de uma collection 
-db.clientes.count();
+db.clientes.countDocuments();
 
 => $DISTINCT: Busca os valores sem duplicidade
 db.contas.distinct("tipo")

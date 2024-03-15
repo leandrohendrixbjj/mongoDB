@@ -1,0 +1,22 @@
+## => Apresenta os 5 primeiros 
+db.series.aggregate({$limit:5});
+
+## => Busca e ignora os dois primeiros registros
+db.series.aggregate({$skip:2});
+
+## => Conta o total de registros de uma collection ( Com alias ) 
+db.clientes.aggregate({$count: "Total de Clientes"})
+
+## => Ordena por valor
+db.series.aggregate([
+  {$sort: {"Serie":1}}
+]);
+
+## => Limit, Skip and Sort
+db.series.aggregate([
+  {$limit: 50},
+  {$skip: 10},
+  {$sort: {"Serie":1}}
+])
+
+

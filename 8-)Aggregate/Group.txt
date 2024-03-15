@@ -1,0 +1,83 @@
+## => $match with group
+db.contas.aggregate([
+    {$match:
+       {$and: [
+        {"tipo": "Conta salário"},
+        {"valor": {$gt: 8500}}
+       ]}
+    },
+    {$group: { _id: "$tipo", contagem:{$count: {}}}}
+]).sort({valor:1})
+
+## =>Group by campo contas
+db.contas.aggregate({$group: { _id: "$tipo", ContagemDeContas:{$count:{}}}})
+
+## =>Group by and Sum 
+db.vendas.aggregate({
+    $group: {
+        _id: "$produto", Contagem:{$count:{}},
+        Total: {$sum: "$valor"}
+    }
+})
+
+## =>Group by and Sum (Completo)
+db.contas.aggregate({
+    $group: { 
+        _id: "$tipo", Contagem: {$count: {}},
+        TotalEmValor:{$sum: "$valor"},
+        TotalEmClientes: {$sum: "$id_cliente"}
+    }
+})
+
+## =>COUNT value
+db.contas.aggregate({
+    $group: { 
+        _id: "$tipo",
+        contagem:{
+            $count: {}
+        }
+        
+    }
+})
+
+## =>TOTAL value
+db.contas.aggregate({
+    $group: { 
+        _id: "$tipo",
+        total:{
+            $sum: "$valor" 
+        }
+        
+    }
+})
+
+## => TOTAL and AVG value
+db.contas.aggregate({
+    $group: { 
+        _id: "$tipo",
+        total:{
+            $sum: "$valor" 
+        },
+        media:{
+            $avg: "$valor"
+        }
+        
+    }
+})
+
+## =>TOTAL and AVG value only a account
+db.contas.aggregate(
+    {$match: {tipo: "Conta poupança"}},
+    {$group: { 
+        _id: "$tipo",
+        total:{
+            $sum: "$valor" 
+        },
+        media:{
+            $avg: "$valor"
+        }
+        
+      }
+    }
+)
+ 
