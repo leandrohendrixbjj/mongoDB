@@ -35,29 +35,9 @@ db.contas.aggregate({
     }
 })
 
-## =>COUNT value
-db.contas.aggregate({
-    $group: { 
-        _id: "$tipo",
-        contagem:{
-            $count: {}
-        }
-        
-    }
-})
-
-## =>TOTAL value
-db.contas.aggregate({
-    $group: { 
-        _id: "$tipo",
-        total:{
-            $sum: "$valor" 
-        }
-        
-    }
-})
-
+--- NEXT ----
 ## => TOTAL and AVG value
+## => Apresenta o total e média por tipo de conta
 db.contas.aggregate({
     $group: { 
         _id: "$tipo",
