@@ -35,7 +35,6 @@ db.contas.aggregate({
     }
 })
 
---- NEXT ----
 ## => TOTAL and AVG value
 ## => Apresenta o total e média por tipo de conta
 db.contas.aggregate({
@@ -66,4 +65,35 @@ db.contas.aggregate(
       }
     }
 )
+
+## => MAX value
+## Valor máximo por conta
+db.contas.aggregate({
+    $group: { 
+        _id: "$tipo",
+        valor_maximo:{
+            $max: "$valor"
+        }
+        
+    }
+})
+
+## => MIN value
+## Valor minímo da conta corrente
+db.contas.aggregate([
+    {$match: 
+        {$and: [
+            {"tipo": /conta corrente/i}
+        ]},
+    },
+    { $group: { 
+            _id: "$tipo",
+            min: {$min: "$valor"}
+      }
+    }
+])
+
+
+
+
  
