@@ -1,4 +1,5 @@
 ## => $match with $and
+## => Busca as contas tipo: salário com valor maior que 8500
 db.contas.aggregate([
     {$match:
        {$and: [
@@ -9,7 +10,8 @@ db.contas.aggregate([
 ]).sort({valor:1})
 
 
-## => $lookup: Tipo de left join
+## => $lookup: 
+## => Similar a um left join
 db.clientes.aggregate([{
     $lookup: {
            from: "contas",
@@ -19,7 +21,8 @@ db.clientes.aggregate([{
          }
 }])
 
-## => $lookup: Tipo de left join com restrição de campos
+## => $lookup
+## => Similar a um left join ( com impressão de alguns campos)
 db.clientes.aggregate([{
     $lookup: {
            from: "contas",
@@ -32,7 +35,8 @@ db.clientes.aggregate([{
     {$limit: 5}
 ])
 
-## => $round: Cria uma tabela com valore aleatórios
+## => $round
+## => Cria uma tabela com valore aleatórios
 db.clientes.aggregate({
     $project: {
         _id:1,
