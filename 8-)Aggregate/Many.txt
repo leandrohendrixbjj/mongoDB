@@ -48,7 +48,8 @@ db.clientes.aggregate({
     }
 })
 
-## => $multiply: Multiplcação de um campo da tabela
+## => $multiply: 
+## => Multiplcação de valor
 db.contas.aggregate({
     $project: {
         _id:0,
@@ -61,23 +62,24 @@ db.contas.aggregate({
     }
 })
 
-## => $divide: Add um novo campo de desconto na tabela
+## => $addFields: 
+## => Cria um novo campo de desconto de 10%
 db.contas.aggregate({
     $addFields: {
-        precoDesconto:{ 
-            $round:[{
-              $divide: ["$valor", 1.10]
-            },2]  
+        desconto: {
+            $round: [{
+                $divide: ["$valor", 1.10]     
+            },2]
         }
-    },
+    }
 }).project({
-    _id:0,
     cpf:1,
     valor:1,
-    precoDesconto:1
-})
+    desconto:1
+}).sort({valor:-1})
 
-## => $concat: Concatena Strings
+## => $concat: 
+## => Concatena Strings
 db.clientes.aggregate([{
     $project: {
         descricao:{
@@ -86,7 +88,8 @@ db.clientes.aggregate([{
     }
 }])
 
-## => $split: Quebra uma string em pedaços
+## => $split
+## => Quebra uma string em pedaços
 db.clientes.aggregate([{
     $project: {
         descricao:{
@@ -105,7 +108,8 @@ db.clientes.aggregate([{
     }
 }])
 
-## => $toString: Converte um campo double em String
+## => $toString
+## => Converte um valor em String
 db.contas.aggregate([{
     $project: {
         valotStr:{
