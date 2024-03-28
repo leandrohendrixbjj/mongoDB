@@ -1,0 +1,2 @@
+// $eq => Matches values that are equal to a specified value
+{"Linguagem":{$eq:"Hindi"}}

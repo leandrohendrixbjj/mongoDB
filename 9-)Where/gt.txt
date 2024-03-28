@@ -1,0 +1,21 @@
+// $gt => Matches values that are greater than a specified value. 
+{"Temporadas disponíveis": {$gt:2}}
+
+// $gte => Matches values that are greater than or equal to a specified value.
+{"Temporadas disponíveis": {$gte:2}}
+
+// $gt and $and
+db.series.find({
+    $and: [
+        {"Temporadas disponíveis": {$gt:2}},
+        {"Linguagem": {$eq:'Inglês'}}
+    ]
+})
+
+// $gte, $lte and $and Between
+db.series.find({
+    $and: [
+        { "Ano de lançamento": {$gte:2010} },
+        { "Ano de lançamento": {$lte:2018} }
+    ]
+})

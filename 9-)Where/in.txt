@@ -1,0 +1,5 @@
+// $in => Matches any of the values specified in an array.
+{""Ano de lançamento"":{$in:["2013", "2019"]}}
+
+// $nin => Matches none of the values specified in an array.
+{"Ano de lançamento":{$nin:[2010,1987]}}

@@ -1,0 +1,5 @@
+// $lt => Matches values that are less than a specified value.
+{"Temporadas disponíveis": {$lt:5}}
+
+// $lte => Matches values that are less than or equal to a specified value.
+{"Temporadas disponíveis": {$lte:5}}

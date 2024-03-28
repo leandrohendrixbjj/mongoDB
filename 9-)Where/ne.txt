@@ -1,0 +1,2 @@
+// $ne => Matches all values that are not equal to a specified value.
+{"Linguagem":{$ne:"Inglês"}}

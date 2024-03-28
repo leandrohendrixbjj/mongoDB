@@ -1,0 +1,8 @@
+=>$REGEXP: 
+db.series.find(
+    {$and:[
+      {"Genero":/drama/i},
+      {"Genero": {$size:1}}
+    ]
+    }
+);
