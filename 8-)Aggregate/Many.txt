@@ -7,8 +7,9 @@ db.contas.aggregate([
         {"valor": {$gt: 8500}}
        ]}
     }
-]).sort({valor:1})
-
+])
+.project({"tipo":1, "valor":1})
+.sort({valor:1})
 
 ## => $lookup: 
 ## => Similar a um left join
@@ -87,6 +88,15 @@ db.clientes.aggregate([{
         }
     }
 }])
+--NEXT
+## => $concat e $toString
+db.contas.aggregate([{
+    $project: {
+        descricao:{
+            $concat: ["O cliente e CPF", "$cpf", " possui o valor de ", {$toString: "$valor"}, " na ", "$tipo" ]
+        }
+    }
+}])
 
 ## => $split
 ## => Quebra uma string em pedaços
@@ -114,15 +124,6 @@ db.contas.aggregate([{
     $project: {
         valotStr:{
             $toString: "$valor"
-        }
-    }
-}])
-
-## => $concat e $toString
-db.contas.aggregate([{
-    $project: {
-        descricao:{
-            $concat: ["O cliente e CPF", "$cpf", " possui o valor de ", {$toString: "$valor"}, " na ", "$tipo" ]
         }
     }
 }])
