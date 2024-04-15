@@ -79,6 +79,16 @@ db.contas.aggregate({
     desconto:1
 }).sort({valor:-1})
 
+## => $toString
+## => Converte um valor em String
+db.contas.aggregate([{
+    $project: {
+        valotStr:{
+            $toString: "$valor"
+        }
+    }
+}])
+
 ## => $concat: 
 ## => Concatena Strings
 db.clientes.aggregate([{
@@ -88,12 +98,13 @@ db.clientes.aggregate([{
         }
     }
 }])
---NEXT
+
 ## => $concat e $toString
 db.contas.aggregate([{
     $project: {
         descricao:{
-            $concat: ["O cliente e CPF", "$cpf", " possui o valor de ", {$toString: "$valor"}, " na ", "$tipo" ]
+            $concat: ["O cliente e CPF", "$cpf", " possui o valor de ", {
+                $toString: "$valor"}, " na ", "$tipo" ]
         }
     }
 }])
@@ -114,16 +125,6 @@ db.clientes.aggregate([{
     $project: {
         descricao:{
             $toLower: "$nome"
-        }
-    }
-}])
-
-## => $toString
-## => Converte um valor em String
-db.contas.aggregate([{
-    $project: {
-        valotStr:{
-            $toString: "$valor"
         }
     }
 }])
