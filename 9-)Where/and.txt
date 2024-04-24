@@ -1,4 +1,3 @@
- --NEXT
 =>$REGEXP: 
 db.series.find(
     {$and:[

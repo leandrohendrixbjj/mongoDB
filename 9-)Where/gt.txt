@@ -1,21 +1,26 @@
 // $gt => Matches values that are greater than a specified value. 
-{"Temporadas disponíveis": {$gt:2}}
+db.series.find(
+    {"Temporadas disponíveis": {$gt:2}}
+).project({"Serie":1, "Temporadas disponíveis":1})
+
 
 // $gte => Matches values that are greater than or equal to a specified value.
-{"Temporadas disponíveis": {$gte:2}}
+db.series.find(
+  {"Temporadas disponíveis": {$gte:2}}
+).project({"Serie":1, "Temporadas disponíveis":1}).sort({"Temporadas disponíveis":-1})
 
 // $gt and $and
-db.series.find({
-    $and: [
+db.series.find(
+    {$and: [
         {"Temporadas disponíveis": {$gt:2}},
-        {"Linguagem": {$eq:'Inglês'}}
-    ]
-})
+        {"Linguagem": {$eq: 'Inglês'}}
+    ]}
+).project({"Serie":1, "Temporadas disponíveis":1, "Linguagem":1})
 
-// $gte, $lte and $and Between
+// Between
 db.series.find({
     $and: [
         { "Ano de lançamento": {$gte:2010} },
         { "Ano de lançamento": {$lte:2018} }
     ]
-})
+}).project({"Serie":1, "Ano de lançamento":1})
