@@ -1,2 +1,7 @@
-// $ne => Matches all values that are not equal to a specified value.
-{"Linguagem":{$ne:"Inglês"}}
+// $ne => Matches all values that ARE NOT EQUAL to a specified value.
+db.series.find(
+    {$and: [
+        {"Linguagem": {$ne: 'Inglês'}},
+        {"Linguagem": {$ne: 'Hindi'}}
+    ]}
+).project({"Serie":1, "Linguagem":1})

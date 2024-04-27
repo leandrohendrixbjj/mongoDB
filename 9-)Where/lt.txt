@@ -1,6 +1,9 @@
--- NEXT
-// $lt => Matches values that are less than a specified value.
-{"Temporadas disponíveis": {$lt:5}}
+// $lt => Matches values that ARE LESS than a specified value.
+db.series.find(
+    {"Temporadas disponíveis": {$lt:3}}
+).project({"Serie":1, "Temporadas disponíveis":1})
 
 // $lte => Matches values that are less than or equal to a specified value.
-{"Temporadas disponíveis": {$lte:5}}
+db.series.find(
+    {"Temporadas disponíveis": {$lte:4}}
+).project({"Serie":1, "Temporadas disponíveis":1}).sort({"Temporadas disponíveis":-1})
