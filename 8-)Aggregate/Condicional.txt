@@ -1,24 +1,25 @@
--- NEXT
-=> True or False
+=> Condicional para listagem de valores
 db.contas.aggregate([{
-   $project:{
-         cpf:1,
-             tipo:1,
-             valores:{
-                 $cond:[{$gte:["$valor",8000]}, "true", "false"]
-             }
+    $project: {
+        cpf:1,
+        tipo:1,
+        valor:1,
+        Condicao: {
+            $cond: { if: { $gte: ["$valor",8000] }, then: "true", else: "false"}
         }
+    }
 }])
 
-=> ifNull
+=> Aposta os valores que estão vazios
 db.contas.aggregate([{
-   $project:{
-         cpf:1,
-             tipo:1,
-             valores:{
-                 $ifNull: [ "$valor", "Unspecified" ]
-             }
+    $project: {
+        cpf:1,
+        tipo:1,
+        valor:1,
+        Condicao: {
+            $ifNull: [ "$valor", "Vazio" ]
         }
+    }
 }])
 
 => switch
@@ -28,14 +29,16 @@ db.contas.aggregate([{
         condicao:{
             $switch: {
               branches: [
-                 { case: {$lte:["$valor",1000]}, then: "valor abaixo do esperado" },
+                 {case: {$lte:["$valor",1000]}, then: "valor abaixo do esperado" },
                  {case: {
-                           $and:[{$gte:["$valor",1001]},
-                           {$lte:["$valor",90000]}]}, then:"valor na media"}
+                           $and:[
+                               {$gte:["$valor",1001]},
+                               {$lte:["$valor",90000]} ]
+                        }, then:"valor na media"}
               ],
               default: "default value"
             }
         }
     }
-}])
+}]) 
 
