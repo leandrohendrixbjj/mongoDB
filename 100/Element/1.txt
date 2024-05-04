@@ -1,3 +1,4 @@
+--NEXT
 $exists(true) => matches the documents that contain the field, including documents where 
                  the field value is null. 
 {age: {$exists:true}} 

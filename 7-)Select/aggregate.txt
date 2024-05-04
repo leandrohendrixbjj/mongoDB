@@ -1,22 +1,34 @@
-## => Apresenta os 5 primeiros 
+=> LIMIT: Apresenta os 5 primeiros 
 db.series.aggregate({$limit:5});
 
-## => Busca e ignora os dois primeiros registros
+=> SKIP: Busca e ignora os dois primeiros registros
 db.series.aggregate({$skip:2});
 
-## => Conta o total de registros de uma collection ( Com alias ) 
+=> COUNT: Conta o total de registros de uma collection ( Com alias ) 
 db.clientes.aggregate({$count: "Total de Clientes"})
 
-## => Ordena por valor
+=> SORT: Ordena por valor
 db.series.aggregate([
   {$sort: {"Serie":1}}
 ]);
 
-## => Limit, Skip and Sort
+=> LIMIT,SKIP,SORT
 db.series.aggregate([
   {$limit: 50},
   {$skip: 10},
   {$sort: {"Serie":1}}
 ])
+
+=> $unwind: Show the first array' element in string format
+db.clientes.aggregate([
+    {$unwind: "$seguros"}
+])
+
+=> $sortByCount => Contagem total de cada Genero das Series
+db.series.aggregate(
+    {$unwind: "$Genero"},
+    {$sortByCount: "$Genero"}
+).sort({"Genero":1})
+
 
 
