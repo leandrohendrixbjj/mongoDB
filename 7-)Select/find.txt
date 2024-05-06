@@ -41,3 +41,27 @@ db.series.find({
   }
 }).project({"Serie":1, "Genero":1})
 
+=> $EXISTS
+db.clientes.find(
+    {"seguros": {$exists:true}}
+).project({"nome":1, "seguros":1})
+
+=> $nin and $EXISTS, $nin: NOT SELECT values informed in array list
+db.series.find({
+    $and: [
+        {"Classificação": {$exists:true}},
+        {"Classificação": {$nin:['18+','16+']}},
+    ]
+}).project({"Serie":1, "Classificação":1})
+
+=> $IN: SELECT values informed in array list
+db.series.find({
+    $and: [
+        {"Classificação": {$in:['16+','18+']}}
+    ]
+}).project({"Serie":1, "Classificação":1}).sort({"Classificação":1})
+
+=> $type: returns documents where the BSON type of the field matches the BSON 
+   type passed to. Types: https://www.mongodb.com/docs/manual/reference/bson-types/
+
+
