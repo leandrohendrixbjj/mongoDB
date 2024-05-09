@@ -1,9 +1,6 @@
-// $in => Matches any of the values specified in an array.
+=> IN: SELECT values informed in array list
 db.series.find({
-   "Ano de lançamento": { $in: [2019,2015] }
-}).project({"Serie":1, "Ano de lançamento":1})
-
-// $nin => Matches none of the values specified in an array.
-db.series.find({
-    "Ano de lançamento": {$nin:[2015,2019]}
-}).project({"Serie":1, "Ano de lançamento":1})
+    $and: [
+        {"Classificação": {$in:['16+','18+']}}
+    ]
+}).project({"Serie":1, "Classificação":1}).sort({"Classificação":1})

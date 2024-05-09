@@ -15,3 +15,27 @@ db.series.find().skip(2)
 
 => $MATCH: faz a busca por estado
 db.enderecos.aggregate([{$match: {"estado":'SE'}}])
+
+=> EXPR: Apresenta os dados onde: Temporadas disponíveis é menor que IMDb Avaliação
+db.series.find(
+    {$expr: {$lt: ["IMDb Avaliação", "Temporadas disponíveis"]}}
+).project({"serie":1,"Temporadas disponíveis":1,"IMDb Avaliação":1})
+
+=> MOD: Apresenta dados onde na divisão por 4 o resto será zero
+db.inventory.find(
+    {"qty": {$mod: [4,0]}}
+);
+
+=> REGEX: Procura nome da serie letras a e u em sequência. Ignorando upper and lower case.
+db.series.find({
+    "Serie": {
+        $regex: /au/i
+    }
+}).project({"Serie":1}).sort({"Serie":1})
+
+=> REGEX e OPTIONS: Procura nome da serie letras u e a em sequência. Ignorando upper and lower case.
+db.series.find({
+    "Serie": {
+        $regex:/ua/, $options:'i'
+    }
+}).project({"Serie":1}).sort({"Serie":1})

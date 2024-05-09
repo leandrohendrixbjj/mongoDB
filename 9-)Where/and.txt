@@ -1,8 +1,15 @@
-=>$REGEXP: 
-db.series.find(
-    {$and:[
-      {"Genero":/drama/i},
-      {"Genero": {$size:1}}
+=> AND
+db.contas.find({ 
+  $and: [
+    { tipo: { $eq:'Conta salário' }, valor:{ $gte:9000 } }
+  ]
+}).project({tipo:1, valor:1})
+
+=> AND E EXISTS
+db.clientes.find({
+    $and: [
+        {"cpf": {$exists:true}},
+        {"genero": {$eq:'Feminino'}}
     ]
-    }
-);
+}).project({"cpf":1,"genero":1})
+

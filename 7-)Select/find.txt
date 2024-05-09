@@ -20,7 +20,7 @@ db.series.find().sort({"Serie":-1});
 => ALL: Matches ARRAYS that contain all elements specified in the query.
 db.series.find({"Genero": {$all: ['Artes','Cultura']}})
 
-=> $elemMatch: Selects element if it into array matches with the specified conditions.
+=> ELEMMATCH: Selects element if it into array matches with the specified conditions.
 db.dadosDiversos.find({"results": {$elemMatch:{$gte:1, $lte:3}}})
 
 { _id: 1, results: [ 1, 2, 3 ] } 
@@ -33,7 +33,7 @@ db.series.find({
     "Genero": {$size:1}
 }).project({"Serie":1, "Genero":1})
 
-=> $SIZE and $ALL: Takes Genero only like a Drama and length as 1
+=> SIZE and $ALL: Takes Genero only like a Drama and length as 1
 db.series.find({
   "Genero": {
       $all: ['Drama'],
@@ -41,27 +41,12 @@ db.series.find({
   }
 }).project({"Serie":1, "Genero":1})
 
-=> $EXISTS
+=> EXISTS
 db.clientes.find(
     {"seguros": {$exists:true}}
 ).project({"nome":1, "seguros":1})
 
-=> $nin and $EXISTS, $nin: NOT SELECT values informed in array list
-db.series.find({
-    $and: [
-        {"Classificação": {$exists:true}},
-        {"Classificação": {$nin:['18+','16+']}},
-    ]
-}).project({"Serie":1, "Classificação":1})
-
-=> $IN: SELECT values informed in array list
-db.series.find({
-    $and: [
-        {"Classificação": {$in:['16+','18+']}}
-    ]
-}).project({"Serie":1, "Classificação":1}).sort({"Classificação":1})
-
-=> $type: returns documents where the BSON type of the field matches the BSON 
+=> TYPE: returns documents where the BSON type of the field matches the BSON 
    type passed to. Types: https://www.mongodb.com/docs/manual/reference/bson-types/
 
 
