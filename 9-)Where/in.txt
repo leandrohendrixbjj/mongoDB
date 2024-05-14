@@ -3,4 +3,17 @@ db.series.find({
     $and: [
         {"Classificação": {$in:['16+','18+']}}
     ]
-}).project({"Serie":1, "Classificação":1}).sort({"Classificação":1})
+})
+.project({"Serie":1, "Classificação":1})
+.sort({"Classificação":1})
+
+=> IN and OR
+db.contas.find({
+    $or: [
+        {"tipo": {$in: ["Conta salário","Conta poupança"]} }
+    ],
+    "valor":{$gte:8500}
+})
+.projection({"tipo":1, "valor":1})
+.sort({"valor":1})
+

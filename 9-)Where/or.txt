@@ -1,0 +1,23 @@
+=> OR: Uma das duas condições no bloco deve ser TRUE para impressão ds dados
+
+db.enderecos.find(
+    {$or: [
+            {"estado":'SP'},
+            {"estado":'BA'},
+          ]
+    }
+).project({"estado":1, "cidade":1});
+
+=> OR and AND
+db.contas.find({
+    $or: [
+        {"tipo": /salário/i},
+        {"tipo": /poupança/i},
+    ],
+    $and: [       
+        {"valor": {$gte: 8500}}
+    ]
+})
+.projection({"numero_conta":1, "tipo":1, "valor":1})
+.sort({"valor":1})
+

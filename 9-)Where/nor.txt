@@ -1,0 +1,17 @@
+=> $NOR: Apresenta os registros que NÃO SATISFAZ as condições dentro do bloco 
+
+# Apenas Estados que não sejam iguais a SP
+db.enderecos.find(
+    {$nor: 
+        [{"estado":'SP'}]
+    }
+).project({"estado":1, "cidade":1});
+
+# Apenas Series que não tem lançamento em 2012 e linguagem diferente de inglês
+db.series.find(    
+    {$nor: [ 
+            {"Ano de Lançamento":2012}, 
+            {"Linguagem":"Inglês"}
+          ]
+    }    
+).project({"Serie":1, "Ano de lançamento":1, "Linguagem":1})

@@ -1,7 +1,8 @@
-=> NIN and $EXISTS, $nin: NOT SELECT values informed in array list
-db.series.find({
-    $and: [
-        {"Classificação": {$exists:true}},
-        {"Classificação": {$nin:['18+','16+']}},
-    ]
-}).project({"Serie":1, "Classificação":1})
+=> NIN 
+
+# Apresenta estados diferentres de SP e AC
+db.enderecos.find(
+    {"estado": {$nin:['SP','AC']}}
+)
+.project({"estado":1, "cidade":1})
+.sort({"estado":1})
