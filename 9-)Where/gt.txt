@@ -24,3 +24,13 @@ db.series.find({
         { "Ano de lançamento": {$lte:2018} }
     ]
 }).project({"Serie":1, "Ano de lançamento":1})
+
+// Returns elements that are greater than 85. The "grades.$": 1 show us only the first                  
+db.dadosDiversos.find(
+    {'semester':1, 'grades': {$gte:85}}, {"grades.$":1} )
+
+{ "_id" : 1, "semester" : 1, "grades" : [ 70, 87, 90 ] }
+{ "_id" : 2, "semester" : 1, "grades" : [ 90, 88, 92 ] }
+{ "_id" : 3, "semester" : 1, "grades" : [ 85, 100, 90 ] }
+
+

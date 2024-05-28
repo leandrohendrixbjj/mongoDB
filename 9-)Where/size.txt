@@ -1,0 +1,8 @@
+// Return customers that have dependentes with array lenght like 2
+// slice makes returs only de first element between the two
+db.clientes.find({
+    $and: [
+        {dependentes:{$exists:true}},
+        {dependentes:{$size:2}}
+    ]
+}, {"nome":1, "dependentes": {$slice: 1}}
