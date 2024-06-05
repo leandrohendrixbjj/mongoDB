@@ -1,0 +1,15 @@
+'SLICE': return the array with its last three elements.
+If the array has less than three elements, all elements in the array are returned.
+
+db.dadosDiversos.find({
+    comments: { $exists:true }
+}).projection({
+    comments: { $slice:3 },
+})
+
+"slice": return the array with its last two elements. 
+db.dadosDiversos.find({
+    comments: { $exists:true }
+}).projection({
+    comments: { $slice:[0,2] },
+})
